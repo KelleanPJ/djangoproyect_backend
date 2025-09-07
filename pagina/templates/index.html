@@ -1,0 +1,84 @@
+{% load static %}
+
+<!-- <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página</title>
+    <link rel="stylesheet" href="{% static 'pagina/style.css' %}">
+</head>
+<body>
+    <h1>Hola Trunks, esta es mi primera página con Django 🎉</h1>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="{% static 'pagina/style.css' %}">
+</head>
+<body>
+
+<header> <!-- Encabezado-->
+    <div class="container"> <!-- Clase Container para asignarle un formato de forma. Esta clase se presenta en varias secciones de la pagina-->
+        <h1>¡Bienvenido a mi paginanuestra página!</h1> <!-- Titulo de la página-->
+        <p>Sitio web de muestra para una empresa ficticia</p> <!-- Descripcion-->
+        <a href="#features" class="btn">Ver características</a> <!-- Boton directo a la seccion caracteristicas-->
+    </div>
+</header>
+
+<section id="features"> <!-- Seccion de caracteristicas-->
+    <div class="container">
+        <h2>Características principales</h2>
+        <div class="feature"> <!-- Esta clase recibe el estilo de centrado y margen-->
+            <h3>Facilidad de uso</h3>
+            <p>Nuestra plataforma es fácil de usar para cualquier persona, sin importar su experiencia.</p>
+        </div>
+        <div class="feature">
+            <h3>Diseño moderno</h3>
+            <p>Nuestro diseño está actualizado con las últimas tendencias para brindar la mejor experiencia al usuario.</p>
+        </div>
+        <div class="feature">
+            <h3>Soporte 24/7</h3>
+            <p>Ofrecemos soporte técnico las 24 horas del día, los 7 días de la semana, para ayudarte en cualquier momento.</p>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials"> <!-- Seccion Testimonios-->
+    <div class="container">
+        <h2>Testimonios</h2>
+        <div class="testimonial"> <!-- Esta clase recibe formato de color de fondo, borde, margen-->
+            <p>"¡Increíble servicio! ¡Gracias por hacer mi vida más fácil!"</p>
+            <cite>- Cliente feliz</cite>
+        </div>
+        <div class="testimonial">
+            <p>"Nunca pensé que encontraría una solución tan genial. ¡Recomendado al 100%!"</p>
+            <cite>- Otro cliente satisfecho</cite>
+        </div>
+    </div>
+</section>
+
+<section id="contact"> <!-- Seccion Contacto y formulario-->
+    <div class="container">
+        <h2>Contacto</h2>
+        <form action="#" method="post"> <!-- Formulario de contacto-->
+            <input type="text" name="name" placeholder="Nombre" required> <!-- Campo para recibir un nombre-->
+            <input type="email" name="email" placeholder="Correo electrónico" required><!-- Campo para recibir un collero-->
+            <textarea name="message" placeholder="Mensaje" required></textarea><!-- Campo para escribir un texto-->
+            <button type="submit" class="btn">Enviar mensaje</button>
+        </form>
+    </div>
+</section>
+
+<footer><!-- Pie de pagina, recibe color de fondo, texto centrado-->
+    <div class="container">
+        <p>&copy; 2025 Compañía XYZ. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>

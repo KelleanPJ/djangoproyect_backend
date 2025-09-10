@@ -1,116 +1,90 @@
-/* body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  max-width: 1100px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.left-column, .right-column {
+  padding: 20px;
+}
+
+.left-column {
+  background-color: #f0f8ff;
+  width: 40%;
+}
+
+.right-column {
+  background-color: rgb(75, 74, 74);
+  color: rgb(227, 224, 255);
+  width: 60%;
+}
+
+.profile-photo img {
+  width: 50%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 h1 {
-    color: darkblue;
-} */
-
-
-
-body {      /* Brinda estilo general paa todo el cuerpo de la pagina con tipo de letra y margenes interiores y exteriores */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-size: 28px;
+  color: #007BFF;
 }
 
-.container {        /* Limita el ancho, y establece margen a todas las secciones, pero no colores ni fuentes */
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px 0;
+h1 span {
+  color: #444;
 }
 
-header {        /* Brinda color de fondo, color de letra, centrado horizontal y margen, al Encabezado */
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-header h1 {         /* Le da tamaño grande al texto: "¡Bienvenido a nuestra página!" del encabezado */
-    font-size: 2.5em;
+.contact-info p {
+  font-size: 14px;
+  margin: 5px 0;
 }
 
-.btn {          /* Da formato al boton del encabezado, con color azul, bordes redondeados, y una atenuación con retraso de 0.3s cuando el cursor pasa sobre él */
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+section {
+  margin-top: 25px;
+  font-style: italic;
 }
 
-.btn:hover {        /* Cambia el color del boton a un tono más oscuro cuando el cursor pasa sobre él  */
-    background-color: #0056b3;
+h2{
+  background-color: rgb(202, 237, 251);
+  padding: 10px;
+  border-radius: 15px;
+}
+section h2 {
+  font-size: 18px;
+  border-bottom: 3px solid #007BFF;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
 
-section {       /* Da formato de margen interior a todas las secciones */
-    padding: 50px 0;
+.TextoColumnaGris{
+  font-size: 18px;
+  color: rgb(24, 24, 247);
+  background-color: rgb(218, 242, 208);
+  padding: 10px;
+  border-radius: 15px;
+  border-bottom: 3px solid #1b9203;
+
 }
 
-h2 {        /* Centra horizontalmente todos textos de los h2  */
-    text-align: center;
+ul {
+  padding-left: 20px;
 }
 
-.feature {      /* Centra los textos horizontalmente y establece un margen inferior  */
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.feature h3 {       /* Agranda el tamaño de fuente de todos los h3 comprendidos dentro de .feature  */
-    font-size: 1.5em;
-}
-
-.testimonial {      /* Establece un fodo de color gris claro, margen interior, bordes ligeramente redondeados, y margen exterior inferior */
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 30px;
-}
-
-.testimonial p {        /* Establece estilo de letra cursiva o itálica en <p>  */
-    font-style: italic;
-}
-
-.testimonial cite {     /* Establece estilo Negrita en <cite>  */
-    font-weight: bold;
-}
-
-form {          /* Establece el año máximo que tendra el campo para ingreso de información  */
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {              /* Establece para los tres campos el ancho, margen interior, borde ligeramente redondeado, y linea de contorno color claro  */
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-button[type="submit"] {  /* Da formato al boton de "Enviar mensaje", con color azul, bordes redondeados, y una atenuación con retraso de 0.3s cuando el cursor pasa sobre él */
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button[type="submit"]:hover {       /* Cambia el color del boton a un tono más oscuro cuando el cursor pasa sobre él  */
-    background-color: #0056b3;
-}
-
-footer {    /* Establece al piede pagina un fondo de color gris oscuro, letras color claro, centradas horizontalmente y margen interior */
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+ul li {
+  margin-bottom: 5px;
 }

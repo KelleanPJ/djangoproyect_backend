@@ -1,8 +1,8 @@
 import os
 import django
 
-# Configurar Django
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mysite.settings") #ESTO DEBES CAMBIARLO SEGUN EL NOMBRE DE TU CARPETA
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mysite.settings") 
 
 django.setup()
 

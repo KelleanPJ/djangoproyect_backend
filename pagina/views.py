@@ -3,8 +3,6 @@ from .models import Producto
 
 # Create your views here.
 
-# def index(request):
-#     return render(request, "index.html")
 
 
 def index(request):

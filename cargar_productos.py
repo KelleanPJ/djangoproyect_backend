@@ -9,18 +9,18 @@ django.setup()
 from pagina.models import Producto
 
 def cargar_producto():
-    nombre = input("Nombre: ")
     marca = input("Marca: ")
     modelo = input("Modelo: ")
-    descripcion = input("Descripción: ")
-    categoria = input("Categoría: ")
+    año = input("Año: ")
+    color = input("Color: ")
+    cantidad = input("Cantidad: ")
 
     p = Producto.objects.create(
-        nombre=nombre,
         marca=marca,
         modelo=modelo,
-        descripcion=descripcion,
-        categoria=categoria
+        año=año,
+        color=color,
+        cantidad=cantidad
     )
     print("✅ Producto guardado:", p)
 

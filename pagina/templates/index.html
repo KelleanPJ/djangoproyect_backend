@@ -1,16 +1,27 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi Curriculum</title>
+  <title>Lista de Productos</title>
   <link rel="stylesheet" href="{% static 'pagina/style.css' %}">
-  <!-- <script src="script.js"></script> -->
-  
 </head>
 <body>
-  
-  
+  <h1>VEHÍCULOS</h1>
+  <ul>
+    {% for producto in productos %}
+      <li>
+        <strong>{{ producto.nombre }}</strong> - 
+        {{ producto.marca }} - 
+        {{ producto.modelo }} - 
+        {{ producto.año }} - 
+        {{ producto.color }} - 
+        {{ producto.cantidad }}
+      </li>
+    {% empty %}
+      <li>No hay productos registrados.</li>
+    {% endfor %}
+  </ul>
 </body>
 </html>

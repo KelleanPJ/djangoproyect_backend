@@ -1,8 +1,18 @@
+# from django.contrib import admin
+# from django.urls import include, path
+
+# urlpatterns = [
+#     path("polls/", include("polls.urls")),
+#     path("admin/", admin.site.urls),
+#     path("", include("pagina.urls")),
+# ]
+
+
+
 from django.contrib import admin
-from django.urls import include, path
+from django.urls import path, include
 
 urlpatterns = [
-    path("polls/", include("polls.urls")),
-    path("admin/", admin.site.urls),
-    path("", include("pagina.urls")),
+    path('admin/', admin.site.urls),
+    path('', include('pagina.urls')),   # root apunta a la app Pagina
 ]

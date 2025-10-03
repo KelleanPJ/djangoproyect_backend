@@ -1,0 +1,13 @@
+{% extends 'pagina/base.html' %}
+{% block content %}
+<h2>Producto: {{ producto }}</h2>
+<ul class="list-group">
+  <li class="list-group-item"><strong>Marca:</strong> {{ producto.marca }}</li>
+  <li class="list-group-item"><strong>Modelo:</strong> {{ producto.modelo }}</li>
+  <li class="list-group-item"><strong>Año:</strong> {{ producto.anio }}</li>
+  <li class="list-group-item"><strong>Color:</strong> {{ producto.color }}</li>
+  <li class="list-group-item"><strong>Cantidad:</strong> {{ producto.cantidad }}</li>
+</ul>
+<a href="{% url 'pagina:producto_edit' producto.pk %}" class="btn btn-primary mt-3">Editar</a>
+<a href="{% url 'pagina:producto_list' %}" class="btn btn-secondary mt-3">Volver</a>
+{% endblock %}

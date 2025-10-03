@@ -11,14 +11,14 @@ from pagina.models import Producto
 def cargar_producto():
     marca = input("Marca: ")
     modelo = input("Modelo: ")
-    año = input("Año: ")
+    anio = input("Año: ")
     color = input("Color: ")
     cantidad = input("Cantidad: ")
 
     p = Producto.objects.create(
         marca=marca,
         modelo=modelo,
-        año=año,
+        anio=anio,
         color=color,
         cantidad=cantidad
     )

@@ -1,0 +1,17 @@
+{% extends 'pagina/base.html' %}
+{% block content %}
+
+{% if view.object %}
+  <h2>Editar producto</h2>
+{% else %}
+  <h2>Crear producto</h2>
+{% endif %}
+
+
+<form method="post" novalidate>
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit" class="btn btn-primary">Guardar</button>
+  <a href="{% url 'pagina:producto_list' %}" class="btn btn-secondary">Cancelar</a>
+</form>
+{% endblock %}
